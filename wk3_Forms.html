@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> FORMS IN HTML</title>
+  </head>
+
+  <body>
+
+    <fieldset>
+      <legend> Student Info.</legend>
+      <form action='' method='post' enctype='multipart/form-data'>
+        <label for='name'> Name: </label>
+        <input id='name' type='text' placeholder= 'Enter Your Name' required/><br><br>
+        
+        <label for='date_of_birth'> Date of Birth </label>
+        <input id='date_of_birth' type='date' name='Date of Birth' required/><br><br>
+        
+        <label> Gender </label><br>
+        <input id='male' type='radio' name='Gender' value='male'>
+        <label for='  male'> Male </label><br>
+        <input id='female' type='radio' name='Gender' value='Female'>
+        <label for='female'> Female </label><br><br>
+        
+        <label for='address'> Address: </label>
+        <input id='address' type='text' placeholder= 'Enter Your Address' required/><br><br>    
+        
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="Telephone" placeholder="Enter Your Telephone" required /><br> <br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" placeholder="johndoe@example.com" required /><br> <br>
+        
+        </fieldset>
+        
+        <fieldset>
+          <legend> Course Selection </legend>
+          <label for='major_course'>Major Course</label>
+          <select id='major_course' name='major_course'>
+            <option value=''> </option>     
+            <option value='Web'> Web Technology </option>
+            <option value='Dart'> Dart with Flutter </option>
+            <option value='Database'> Database Design </option>
+            <option value='Python'> Python </option>
+            <option value='Entrepreneur'> Entreprenuer </option>
+            <option value='Software Engineering'> Software Engineering </option>
+          </select> <br><br>
+          <label> Elective </label><br>
+          <input id='web_tech' type='checkbox' name='Web Tech'> 
+          <label for="web_tech"> Web Technology </label><br>
+          <input id='dart' type='checkbox' name='Dart'> 
+          <label for="dart"> Dart with Flutter </label><br>  <input id='database_design' type='checkbox' name='Database Design'> 
+          <label for="database_design"> Database Design </label><br>      
+          <input id='python' type='checkbox' name='Python'> 
+          <label for="python"> Python </label><br>
+          <input id='entrepreneur' type='checkbox' name='Entrepreneur'> 
+          <label for="entrepreneur"> Entrepreneur </label><br>
+          <input id='software_engineering' type='checkbox' name='Software Engineering'> 
+          <label for="software_engineering"> Software Engineering </label><br>   
+      </fieldset><br>
+      
+      <input type="Submit" id="submit" name="submit" value="Submit" />     
+      <button type="Reset"> Cancel </button> <br>
+
+  </body>
+</html>
